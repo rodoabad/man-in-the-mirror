@@ -4,7 +4,7 @@
   "description": "",
   "main": "./dist/ManInTheMirror.js",
   "files": [
-    "/dist"
+    "dist"
   ],
   "scripts": {
     "build": "parcel build",
