@@ -7,7 +7,7 @@
     "/dist"
   ],
   "scripts": {
-    "build": "npx parcel build",
+    "build": "parcel build",
     "prepublish": "npm run build",
     "semantic-release": "semantic-release"
   },
