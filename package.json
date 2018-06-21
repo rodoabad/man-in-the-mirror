@@ -3,7 +3,11 @@
   "version": "0.0.0-development",
   "description": "",
   "main": "./dist/ManInTheMirror.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "parcel build",
     "semantic-release": "semantic-release"
   },
   "repository": {
