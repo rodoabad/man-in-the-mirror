@@ -7,7 +7,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "parcel build",
+    "prepublish": "parcel build",
     "semantic-release": "semantic-release"
   },
   "repository": {
