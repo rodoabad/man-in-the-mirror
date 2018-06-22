@@ -2,7 +2,8 @@
   "name": "man-in-the-mirror",
   "version": "0.0.0-development",
   "description": "This is a test package.",
-  "main": "./src/ManInTheMirror.js",
+  "main": "./dist/ManInTheMirror.js",
+  "module": "./src/ManInTheMirror.js",
   "source": true,
   "files": [
     "dist",
