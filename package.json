@@ -3,7 +3,6 @@
   "version": "0.0.0-development",
   "description": "This is a test package.",
   "main": "./dist/ManInTheMirror.js",
-  "module": "./src/ManInTheMirror.js",
   "source": true,
   "files": [
     "dist",
