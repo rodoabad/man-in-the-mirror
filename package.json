@@ -2,9 +2,10 @@
   "name": "man-in-the-mirror",
   "version": "0.0.0-development",
   "description": "",
-  "main": "./dist/ManInTheMirror.js",
+  "main": "./src/ManInTheMirror.js",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
     "prepublish": "parcel build ./src/ManInTheMirror.js",
