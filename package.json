@@ -7,7 +7,7 @@
     "dist"
   ],
   "scripts": {
-    "prepublish": "parcel build",
+    "prepublish": "parcel build ./src/ManInTheMirror.js",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -31,11 +31,10 @@
     "node-sass": "^4.9.0",
     "parcel-bundler": "^1.9.2",
     "postcss-modules": "^1.1.0",
+    "react-dom": "^16.4.1",
     "semantic-release": "^15.6.0"
   },
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react": "^16.4.1"
   }
 }
