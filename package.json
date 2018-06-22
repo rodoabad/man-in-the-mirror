@@ -2,15 +2,16 @@
   "name": "man-in-the-mirror",
   "version": "0.0.0-development",
   "description": "This is a test package.",
-  "main": "./dist/ManInTheMirror.js",
-  "style": "./dist/ManInTheMirror.css",
-  "source": true,
+  "main": "./dist/cjs/ManInTheMirror.js",
+  "module": "./dist/es/ManInTheMirror.js",
   "files": [
     "dist",
     "src"
   ],
   "scripts": {
-    "prepublish": "parcel build ./src/ManInTheMirror.js",
+    "build": "npm run build-cjs && npm run build-es",
+    "build-cjs": "cross-env BABEL_ENV=cjs parcel build ./src/ManInTheMirror.js --out-dir ./dist/cjs",
+    "build-es": "cross-env BABEL_ENV=es parcel build ./src/ManInTheMirror.js --out-dir ./dist/es",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -29,6 +30,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.2.0",
     "eslint": "^4.19.1",
     "eslint-config-rodoabad": "^2.0.0",
     "node-sass": "^4.9.0",
