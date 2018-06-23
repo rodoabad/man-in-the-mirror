@@ -12,7 +12,7 @@
         [
           "env",
           {
-            "modules": true
+            "modules": "commonjs"
           }
         ]
       ]
