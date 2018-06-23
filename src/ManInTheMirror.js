@@ -10,4 +10,3 @@ const ManInTheMirror = () => {
 };
 
 export default ManInTheMirror;
-

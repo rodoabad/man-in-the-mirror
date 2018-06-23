@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    ManInTheMirror: './src/ManInTheMirror.js'
+    component: './src/ManInTheMirror.js'
   },
   module: {
     rules: [
