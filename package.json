@@ -10,7 +10,8 @@
   "scripts": {
     "build": "rm -rf dist && cross-env BABEL_ENV=cjs webpack --mode production",
     "prepublishOnly": "yarn build",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "test": "echo No test."
   },
   "repository": {
     "type": "git",
