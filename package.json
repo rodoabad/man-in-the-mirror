@@ -2,17 +2,14 @@
   "name": "man-in-the-mirror",
   "version": "0.0.0-development",
   "description": "This is a test package.",
-  "main": "./dist/cjs/ManInTheMirror.js",
-  "module": "./dist/es/ManInTheMirror.js",
+  "main": "./dist/ManInTheMirror.js",
   "files": [
     "dist",
     "src"
   ],
   "scripts": {
-    "build": "npm run build-cjs && npm run build-es",
-    "build-cjs": "cross-env BABEL_ENV=cjs parcel build ./src/ManInTheMirror.js --out-dir ./dist/cjs --no-cache",
-    "build-es": "cross-env BABEL_ENV=es parcel build ./src/ManInTheMirror.js --out-dir ./dist/es --no-cache",
-    "prepublish": "npm run build",
+    "build": "rm -rf dist && cross-env BABEL_ENV=cjs webpack --mode production",
+    "prepublishOnly": "yarn build",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -26,19 +23,22 @@
   },
   "homepage": "https://github.com/rodoabad/man-in-the-mirror#readme",
   "devDependencies": {
-    "autoprefixer": "^8.6.3",
     "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "cross-env": "^5.2.0",
+    "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
     "eslint-config-rodoabad": "^2.0.0",
     "node-sass": "^4.9.0",
-    "parcel-bundler": "^1.9.2",
-    "postcss-modules": "^1.1.0",
     "react-dom": "^16.4.1",
-    "semantic-release": "^15.6.0"
+    "sass-loader": "^7.0.3",
+    "semantic-release": "^15.6.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8"
   },
   "dependencies": {
     "react": "^16.4.1"
