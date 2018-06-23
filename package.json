@@ -2,16 +2,16 @@
   "name": "man-in-the-mirror",
   "version": "0.0.0-development",
   "description": "This is a test package.",
-  "main": "./dist/cjs/ManInTheMirror.js",
-  "module": "./dist/es/ManInTheMirror.js",
+  "main": "./es/ManInTheMirror.js",
   "files": [
-    "dist",
+    "cjs",
+    "es",
     "src"
   ],
   "scripts": {
-    "build": "npm run build-cjs && npm run build-es",
-    "build-cjs": "cross-env BABEL_ENV=cjs parcel build ./src/ManInTheMirror.js --out-dir ./dist/cjs",
-    "build-es": "cross-env BABEL_ENV=es parcel build ./src/ManInTheMirror.js --out-dir ./dist/es",
+    "build": "npm run build-es",
+    "build-cjs": "cross-env BABEL_ENV=cjs parcel build ./src/ManInTheMirror.js --out-dir ./cjs",
+    "build-es": "cross-env BABEL_ENV=es parcel build ./src/ManInTheMirror.js --out-dir ./es",
     "semantic-release": "semantic-release"
   },
   "repository": {
