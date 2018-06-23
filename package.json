@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "build": "npm run build-cjs && npm run build-es",
-    "build-cjs": "cross-env BABEL_ENV=cjs parcel build ./src/ManInTheMirror.js --out-dir ./dist/cjs",
-    "build-es": "cross-env BABEL_ENV=es parcel build ./src/ManInTheMirror.js --out-dir ./dist/es",
+    "build-cjs": "cross-env BABEL_ENV=cjs parcel build ./src/ManInTheMirror.js --out-dir ./dist/cjs --no-cache",
+    "build-es": "cross-env BABEL_ENV=es parcel build ./src/ManInTheMirror.js --out-dir ./dist/es --no-cache",
     "prepublish": "npm run build",
     "semantic-release": "semantic-release"
   },
