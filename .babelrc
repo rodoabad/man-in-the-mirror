@@ -5,27 +5,5 @@
   "presets": [
     "react",
     "env"
-  ],
-  "env": {
-    "cjs": {
-      "presets": [
-        [
-          "env",
-          {
-            "modules": "commonjs"
-          }
-        ]
-      ]
-    },
-    "es": {
-      "presets": [
-        [
-          "env",
-          {
-            "modules": false
-          }
-        ]
-      ]
-    }
-  }
+  ]
 }

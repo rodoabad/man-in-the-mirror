@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    component: './src/ManInTheMirror.js'
+    ManInTheMirror: './src/ManInTheMirror.js'
   },
   module: {
     rules: [
@@ -30,7 +30,8 @@ module.exports = {
     ]
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js'
+    filename: '[name].js',
+    libraryTarget: 'umd',
+    path: path.resolve(__dirname, 'dist')
   },
 };
